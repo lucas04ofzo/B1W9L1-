@@ -1,12 +1,15 @@
+var naam
+var leeftijd
+var stop
 function vragen(){
-	var naam=prompt('Naam:');
-	var leeftijd=prompt('Leeftijd');
+	naam=prompt('Naam:');
+	leeftijd=prompt('Leeftijd:');
+	stop=prompt('Stop?');
 }
 function write(){
 	document.write('Hallo '+naam+', je leeftijd is '+leeftijd);
 }
-if(naam='stop'){
-	write();
-}else{
+do{
 	vragen();
-}
+}while(stop!='stop');
+write();
