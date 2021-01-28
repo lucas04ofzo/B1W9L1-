@@ -1,15 +1,17 @@
 var naam
 var leeftijd
-var stop
+var stop1
+var stop2
 function vragen(){
 	naam=prompt('Naam:');
 	leeftijd=prompt('Leeftijd:');
-	stop=prompt('Stop?');
+	stop1=prompt('Stop?');
+	stop2=stop1.toLowerCase();
 }
 function write(){
 	document.write('Hallo '+naam+', je leeftijd is '+leeftijd);
 }
 do{
 	vragen();
-}while(stop!='stop');
+}while(stop2!='stop');
 write();
